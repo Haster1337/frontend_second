@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Add comments</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="title">
+                <h2>Создать комментарий</h2>
+            </div>
+            <div class="name_date">
+                <div class="name">
+                    <label for="author">Имя пользователя</label>
+                    <input class="name_input" type="text" placeholder="Введите ваше имя" value="" required>
+                </div>
+                <div class="date">
+                    <label for="time">Время создания</label>
+                    <input class="date_input" type="datetime-local" value="">
+                </div>
+            </div>
+            
+            <div class="main">
+                <label for="comment">Комменарий</label>
+                <textarea class="main_input" type="text" placeholder="Введите комментарий..." value="" required></textarea>
+            </div>
+            
+            <div class="btn_div">
+                <button id="submit" type="submit">Добавить комментарий</button>
+            </div>
+        </form>
+        <div class="comments_container">
+            <h1>Список комментарий</h1>
+            <div class="comments">
+                <h3>Список пуст</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
